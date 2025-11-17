@@ -1,0 +1,110 @@
+ body {
+  font-family: 'Times New Roman', Georgia, Garamond, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.hidden { display: none; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-container {
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.total-bar {
+  position: sticky;
+  bottom: 0;
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: right;
+  border-radius: 0 0 12px 12px;
+  font-weight: bold;
+}
+
+.expired { color: red; font-weight: bold; }
+.renewal-soon { color: #ff9800; font-weight: bold; }
+.active { color: green; font-weight: bold; }
+
+.edit-btn, .delete-btn {
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  margin: 0 3px;
+}
+
+.message {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.delete-btn {
+  color: #c0392b;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+  transform: scale(1.1);
+}
+
