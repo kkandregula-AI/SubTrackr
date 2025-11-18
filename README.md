@@ -8,8 +8,7 @@ It includes login, subscription management, renewal reminders, and total monthly
 
 
 
-This project is deployed using \*\*Vercel\*\*, and Firebase API keys are securely handled using \*\*serverless API routes + environment variables\*\* (no API keys in GitHub).
-
+This project is deployed using \*\*Vercel\*\*
 
 
 ---
@@ -58,22 +57,6 @@ This project is deployed using \*\*Vercel\*\*, and Firebase API keys are securel
 
 
 
-\### 🔒 Secure API Key Handling
-
-\- Firebase config is NOT inside frontend code  
-
-\- `/api/firebase` serverless endpoint returns config  
-
-\- Uses Vercel environment variables  
-
-\- Keys are never exposed in GitHub  
-
-
-
----
-
-
-
 \## 📁 Project Structure
 
 
@@ -84,13 +67,8 @@ your-project/
 
 │── style.css # Styling
 
-│── api/
-
-│ └── firebase.js # Secure Firebase config (serverless API)
-
-│── .gitignore
-
 │── README.md
+
 
 
 
